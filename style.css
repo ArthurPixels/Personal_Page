@@ -1,0 +1,35 @@
+body {
+    background-color: #ccfdfd;
+}
+
+.container {
+    background-color: azure;
+}
+
+.profile_photo img{
+    max-width: 10rem;
+    margin: 20px auto;
+    display: inline-block;
+}
+
+.profile {
+    margin: auto;
+    display: inline-block;
+}
+
+.description {
+    margin: 20px auto;
+}
+
+/* .col {
+    background-color: aqua;
+} */
+
+
+.dropdown-item img{
+    max-width: 7rem;
+}
+
+.education {
+    padding-bottom: 20px;
+}
