@@ -3,60 +3,122 @@
 
     <head>
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
         <header>
-            
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <a class="navbar-brand" href="#">Página Pessoal</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <!-- <li class="nav-item active">
+                            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li> -->
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Dropdown Link
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="https://www.youtube.com/watch?v=dQw4w9WgXcQ">
+                                <img src="LinkDaSECCOM2018.png">
+                            </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </header>
 
-        <section>
-            <h1>Arthur Mesquita Pickcius</h1>
-            Endereço <br>
-            Cidade/Estado/País <br>
-            Telefone para contato: <br>
-            Email: <a href="mailto:arthur.pickcius@gmail.com">arthur.pickcius@gmail.com</a><br>
+        <section class="container">
+            <div class="row">
+                <div class="col">
+                    <img src="photo_2018-04-11_2.jpg">
+                </div>
+                <div class="col">
+                    <h1>Arthur Mesquita Pickcius</h1>
+                    <!-- Endereço <br>
+                    Cidade/Estado/País <br>
+                    Telefone para contato: <br> -->
+                    Email: <a href="mailto:arthur.pickcius@gmail.com">arthur.pickcius@gmail.com</a><br>
+                </div>
+            </div>
 
-            <div>
+            <div class="profile">
                 <h2>Perfil Pessoal</h2>
                 <p>
-                    Lorem fucking ipsum
+                    Lorem ipsum dolor sit amet, consectetur adpscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
                 </p>
                 
-            </div>
+            </div><!-- profile -->
 
-            <div>
+            <div class="projects">
                 <h2>Projetos/Vivencias</h2>
-                <b>Labmetro, Fundação CERTI, UFSC</b> - <i>programador</i><br>
-                2012-2013, 2015
                 <ul>
-                    <li>Projeto SHIC (Shearografia para a inspeção de compósitos)</li>
+                    <li>
+                        <b>PET Computação, UFSC</b> - <i>Bolsista</i> (2017-atual)<br>
+                        Programa de Educação Tutorial<br>
+                    </li>
+                    <li>
+                        <b>Departamento de Física, UFSC</b> - <i>Monitor</i> (2015)<br>
+                        Física Teórica B<br>
+                    </li>
+                    <li>
+                        <b>Labmetro, UFSC</b> - <i>Programador</i> (2012-2013) bolsista, (2015) voluntário<br>
+                        Projeto SHIC - Shearografia para a inspeção de compósitos<br>
+                        <p>
+                            A linguagem usada no laboratório era o C#, com WPF.
+                            Comecei na parte de aquisição de imagens, 
+                            e depois trabalhei na otmização do programa existente utilizando openCL.
+                            Quando retornei, em 2015, estive envolvido com a parte de visualização 3D
+                            com uso de openGL.
+                        </p>
+                    </li>
                 </ul>
-            </div>
+            </div><!-- projects -->
 
-            <div>
+            <div class="education">
                 <h2>Formação</h2>
-                <h3>Ensino superior (incompleto)</h3>
-                Universidade Federal de Santa Catarina<br>
                 <ul>
-                    <li>Ciências da Computação</li>
-                    <li>Engenharia de Controle e Automação</li>
+                    <li>
+                        <b>Ensino Superior</b> (incompleto)<br>
+                        Universidade Federal de Santa Catarina
+                        <ul>
+                            <li>Ciências da Computação (2017 - atual)</li>
+                            <li>Engenharia de Controle e Automação (2011 - 2016)</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <b>Ensino Médio</b>
+                        <ul>
+                            <li>Colégio Alpha Objetivo (2008-2010)</li>
+                        </ul>
+                        <b>Ensino Fundamental</b>
+                        <ul>
+                            <li>Colégio Alpha Objetivo (2004-2007)</li>
+                            <li>Colégio Alpha Objetivo Júnior (2003-2004)</li>
+                            <li>Colégio Nossa Senhora de Fátima (2002-2003)</li>
+                        </ul>
+                    </li>
                 </ul>
 
-                <h3>Ensino fundamental e médio</h3>
-                Colégio Alpha Objetivo (2004-2010)<br>
-            </div>
-
-            <div>
-                <h2>Cursos</h2>
-                <h3>Redes, SOS informática</h3>
-                2011
-                <h3>Montagem e Manutenção de Computadores, SENAC</h3>
-                2011
-                <h3>Robótica, SESI</h3>
-                2008-2010
-            </div>
+                <h3>Cursos</h3>
+                <ul>
+                    <li>Machine Learning, Coursera (2018)</li>
+                    <li>Web Design, Projeto Mão na Massa, Cheesecake Labs (2018)</li>
+                    <li>Redes, SOS informática (2011)</li>
+                    <li>Montagem e Manutenção de Computadores, SENAC (2011)</li>
+                    <li>Robótica, SESI (2008-2010)</li>
+                </ul>
+            </div><!-- education -->
         </section>
         
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     </body>
 </html>
